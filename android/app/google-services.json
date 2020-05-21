@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "506122995415",
+    "firebase_url": "https://fyp-quiz-app.firebaseio.com",
+    "project_id": "fyp-quiz-app",
+    "storage_bucket": "fyp-quiz-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506122995415:android:d5c35c7ba5895b7af65292",
+        "android_client_info": {
+          "package_name": "com.example.fyp_quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506122995415-7k2oqsc8jsfld1hjucq7s0vmnpp5mud3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fyp_quiz",
+            "certificate_hash": "4e092b39b3c9f3d96725c69ae909d87188ad2871"
+          }
+        },
+        {
+          "client_id": "506122995415-bgpe1hjor6apfr4kq7hfn0v2l430armj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwNnTG71evDSnivShUf5PNdDvjOlClw7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506122995415-bgpe1hjor6apfr4kq7hfn0v2l430armj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
