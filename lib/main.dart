@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:fyp_quiz/screens/view-questions.dart';
 import 'package:path/path.dart' show join;
 import 'package:path_provider/path_provider.dart';
 
@@ -72,7 +73,35 @@ class TakePictureScreenState extends State<TakePictureScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('FYP app console')),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(80.0),
+        child: AppBar(
+          // actions: <Widget>[
+          //   IconButton(
+          //       icon: Icon(Icons.shopping_cart_rounded),
+          //       onPressed: () {
+          //         // Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+          //         //   return Cart();
+          //         // }));
+          //         // SystemNavigator.pop();
+          //       })
+          // ],
+          leading: IconButton(
+            icon: Icon(Icons.dehaze),
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (_) {
+                return ViewQuestion();
+              }));
+            },
+          ),
+          title: Text("Home"),
+          // shape: RoundedRectangleBorder(
+          //   borderRadius: BorderRadius.vertical(
+          //     bottom: Radius.circular(20),
+          //   ),
+          // ),
+        ),
+      ),
       // Wait until the controller is initialized before displaying the
       // camera preview. Use a FutureBuilder to display a loading spinner
       // until the controller has finished initializing.
