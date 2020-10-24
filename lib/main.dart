@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:fyp_quiz/screens/view-gesture.dart';
 import 'package:fyp_quiz/screens/view-questions.dart';
 import 'package:path/path.dart' show join;
 import 'package:path_provider/path_provider.dart';
@@ -90,7 +91,7 @@ class TakePictureScreenState extends State<TakePictureScreen> {
             icon: Icon(Icons.dehaze),
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (_) {
-                return ViewQuestion();
+                return ViewGesture();
               }));
             },
           ),
