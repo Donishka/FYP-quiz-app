@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fyp_quiz/services/collection-service.dart';
 
-class ViewQuestion extends StatelessWidget {
-  final CollectionService service = CollectionService('keystroke_questions');
+class ViewGesture extends StatelessWidget {
+  final CollectionService service = CollectionService('gesture');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +11,7 @@ class ViewQuestion extends StatelessWidget {
             icon: Icon(Icons.dehaze),
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (_) {
-                return ViewQuestion();
+                return ViewGesture();
               }));
             },
           ),
@@ -22,11 +22,13 @@ class ViewQuestion extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 20, left: 20),
               child: Container(
-                  width: double.infinity,
-                  child: Text(
-                    "category.toUpperCase(),",
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
-                  )),
+                    height: 155,
+                    width: 150,
+                    child: Image.network(
+                      "https://i5.walmartimages.ca/images/Enlarge/094/514/6000200094514.jpg",
+                      scale: 0.5,
+                    )
+                    ),
             ),
             Container(
               height: 300,
