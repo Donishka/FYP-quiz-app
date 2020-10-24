@@ -28,35 +28,35 @@ class ViewQuestion extends StatelessWidget {
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.w400),
                   )),
             ),
-            Container(
-              height: 300,
-              child: StreamBuilder(
-                stream: service.getCollection(),
-                builder: (context, snapshot) {
-                  if (!snapshot.hasData)
-                    return Center(child: const Text('Loading...'));
-                  return ListView.builder(
-                      itemCount: snapshot.data.documents.length,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          height: 100,
-                          width: MediaQuery.of(context).size.width * 0.6,
-                          margin: EdgeInsets.all(15.0),
-                          decoration: BoxDecoration(
-                            color: Colors.lightGreen[100],
-                            borderRadius: BorderRadius.all(Radius.circular(30)),
-                          ),
-                          child: Text("snapshot.data.documents[index]['question']"),
-                          // Text(snapshot.data.documents[index]['name']) ,
-                        );
-                      }
+            // Container(
+            //   height: 300,
+            //   child: StreamBuilder(
+            //     stream: service.getCollection(),
+            //     builder: (context, snapshot) {
+            //       if (!snapshot.hasData)
+            //         return Center(child: const Text('Loading...'));
+            //       return ListView.builder(
+            //           itemCount: snapshot.data.documents.length,
+            //           scrollDirection: Axis.horizontal,
+            //           itemBuilder: (context, index) {
+            //             return Container(
+            //               height: 100,
+            //               width: MediaQuery.of(context).size.width * 0.6,
+            //               margin: EdgeInsets.all(15.0),
+            //               decoration: BoxDecoration(
+            //                 color: Colors.lightGreen[100],
+            //                 borderRadius: BorderRadius.all(Radius.circular(30)),
+            //               ),
+            //               child: Text("snapshot.data.documents[index]['question']"),
+            //               // Text(snapshot.data.documents[index]['name']) ,
+            //             );
+            //           }
 
-                      // crop(snapshot.data.documents[index], context)
-                      );
-                },
-              ),
-            ),
+            //           // crop(snapshot.data.documents[index], context)
+            //           );
+            //     },
+            //   ),
+            // ),
           ],
         ));
   }
